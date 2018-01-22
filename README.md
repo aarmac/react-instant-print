@@ -11,13 +11,13 @@ A Polaroid-style image component that implements [CSSGram](https://github.com/un
 ## Props
 
 ```
-alt: string.isRequired
+alt: string // required
 caption: string
-fadeDuration: string
+fadeDuration: string // default: '1s'
 filter: string
-height: number
-src: string
-width: number
+height: number // default: 300
+src: string // required
+width: number // default: 300
 ```
 
 ## Filters
