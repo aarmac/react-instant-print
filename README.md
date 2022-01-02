@@ -5,7 +5,13 @@ A instant print styled image component using [CSSGram](https://github.com/una/CS
 ## Usage
 
 ```
-<InstantPrint alt="A bear" caption="A bear" src="https://placebear.com/600/600" />
+<InstantPrint
+  altText="A bear"
+  caption="A bear"
+  fadeDuration="2s"
+  filter="lofi"
+  src="https://placebear.com/600/600"
+/>
 ```
 
 ## Props
