@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Reactaroid from './Reactaroid'
+import InstantPrint from './InstantPrint'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
 
   ReactDOM.render(
-    <Reactaroid alt="A bear"
+    <InstantPrint altText="A bear"
       caption="A bear"
       fadeDuration="2s"
       filter="lofi"

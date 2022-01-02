@@ -2,22 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './style.scss'
 
-const Reactaroid = ({ alt, caption, fadeDuration, filter, height, src, width }) => (
-  <div className="reactaroid--container">
+const InstantPrint = ({ altText, caption, fadeDuration, filter, height, src, width }) => (
+  <div className="instant-print--container">
     <figure
-      className={`reactaroid--${filter ? filter : 'nofilter'}`}
+      className={`instant-print ${filter ? filter : 'nofilter'}`}
       style={{ height: height, width: width }}>
-      <img alt={alt}
-        onLoad={event => event.target.classList.add('reactaroid--loaded')}
+      <img alt={altText}
+        className="instant-print--image"
+        onLoad={event => event.target.classList.add('instant-print--image__loaded')}
         src={src}
         style={{ transitionDuration: fadeDuration }}
       />
     </figure>
-    {caption && <figcaption>{caption}</figcaption>}
+    {caption && <figcaption className="instant-print--caption">{caption}</figcaption>}
   </div>
 )
 
-Reactaroid.propTypes = {
+InstantPrint.propTypes = {
   alt: PropTypes.string.isRequired,
   caption: PropTypes.string,
   fadeDuration: PropTypes.string.isRequired,
@@ -42,10 +43,10 @@ Reactaroid.propTypes = {
   width: PropTypes.number
 }
 
-Reactaroid.defaultProps = {
+InstantPrint.defaultProps = {
   fadeDuration: '1s',
   height: 300,
   width: 300
 }
 
-export default Reactaroid
+export default InstantPrint

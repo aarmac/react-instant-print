@@ -1,1 +1,3 @@
-export { default } from './components/Reactaroid'
+import InstantPrint from './components/InstantPrint/InstantPrint'
+
+export { InstantPrint }

@@ -1,17 +1,17 @@
-# Reactaroid
+# React Instant Print
 
-A Polaroid-style image component that implements [CSSGram](https://github.com/una/CSSgram) for Instagram-style filters.
+A instant print styled image component using [CSSGram](https://github.com/una/CSSgram) filters.
 
 ## Usage
 
 ```
-<Reactaroid alt="A bear" caption="A bear" src="https://placebear.com/600/600" />
+<InstantPrint alt="A bear" caption="A bear" src="https://placebear.com/600/600" />
 ```
 
 ## Props
 
 ```
-alt: string // required
+altText: string // required
 caption: string
 fadeDuration: string // default: '1s'
 filter: string

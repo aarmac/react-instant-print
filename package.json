@@ -1,27 +1,23 @@
 {
-  "name": "reactaroid",
-  "version": "0.1.0",
   "private": true,
+  "name": "@abmacdonald/react-instant-print",
+  "version": "1.0.0",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "files": [ "dist" ],
   "dependencies": {
     "cssgram": "^0.1.3",
+    "prop-types": "^15.8.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
-  "devDependencies": {
-    "nwb": "^0.21.2",
-    "nwb-sass": "^0.8.2",
-    "webpack": "^3.10.0"
-  },
   "scripts": {
-    "start": "nwb serve-react-app",
-    "build": "nwb build-react-app"
+    "watch": "parcel watch",
+    "serve": "parcel serve",
+    "build": "parcel build"
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "parcel": "^2.0.1"
   }
 }
