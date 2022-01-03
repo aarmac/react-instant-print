@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import InstantPrint from './InstantPrint'
+import InstantPrint from '../InstantPrint'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
