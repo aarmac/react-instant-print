@@ -6,11 +6,11 @@ A instant print styled image component using [CSSGram](https://github.com/una/CS
 
 ```
 <InstantPrint
-  altText="A bear"
-  caption="A bear"
-  fadeDuration="2s"
-  filter="lofi"
-  src="https://placebear.com/600/600"
+  altText="A random placeholder image"
+  captionText="Something"
+  fadeDuration="360s"
+  filter="xpro2"
+  src="https://picsum.photos/300/300"
 />
 ```
 
@@ -18,8 +18,8 @@ A instant print styled image component using [CSSGram](https://github.com/una/CS
 
 ```
 altText: string // required
-caption: string
-fadeDuration: string // default: '1s'
+captionText: string
+fadeDuration: string // default: '60s'
 filter: string
 height: number // default: 300
 src: string // required
@@ -33,16 +33,34 @@ The following filters can be used for the component's `filter` prop. See the [CS
 ```
 _1977
 aden
+brannan
 brooklyn
+clarendon
+earlybird
 gingham
 hudson
 inkwell
+kelvin
+lark
 lofi
+maven
 mayfair
+moon
 nashville
 perpetua
 reyes
+rise
+slumber
+stinson
 toaster
+valencia
 walden
+willow
 xpro2
 ```
+
+## Future
+
+- Preset film formats
+- Optional controls (reset, speed)
+- Scaling caption font size

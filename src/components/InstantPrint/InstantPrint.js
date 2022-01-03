@@ -1,42 +1,54 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './style.scss'
+import './style.css'
 
-const InstantPrint = ({ altText, caption, fadeDuration, filter, height, src, width }) => (
-  <div className="instant-print--container">
+const InstantPrint = ({ altText, captionText, fadeDuration, filter, height, src, width }) => (
+  <div className="instant-print">
     <figure
-      className={`instant-print ${filter ? filter : 'nofilter'}`}
+      className={filter}
       style={{ height: height, width: width }}>
-      <img alt={altText}
-        className="instant-print--image"
-        onLoad={event => event.target.classList.add('instant-print--image__loaded')}
+      <img
+        alt={altText}
+        onLoad={event => event.target.classList.add('instant-print--loaded')}
         src={src}
         style={{ transitionDuration: fadeDuration }}
       />
     </figure>
-    {caption && <figcaption className="instant-print--caption">{caption}</figcaption>}
+    {captionText && <figcaption>{captionText}</figcaption>}
   </div>
 )
 
 InstantPrint.propTypes = {
-  alt: PropTypes.string.isRequired,
-  caption: PropTypes.string,
+  altText: PropTypes.string.isRequired,
+  captionText: PropTypes.string,
   fadeDuration: PropTypes.string.isRequired,
   filter: PropTypes.oneOf([
     '_1977',
     'aden',
+    'brannan',
     'brooklyn',
+    'clarendon',
+    'earlybird',
     'gingham',
     'hudson',
     'inkwell',
+    'kelvin',
+    'lark',
     'lofi',
+    'maven',
     'mayfair',
+    'moon',
     'nashville',
     'perpetua',
     'reyes',
+    'rise',
+    'slumber',
+    'stinson',
     'toaster',
+    'valencia',
     'walden',
-    'xpro2'
+    'willow',
+    'xpro2',
   ]),
   height: PropTypes.number,
   src: PropTypes.string.isRequired,
@@ -44,7 +56,7 @@ InstantPrint.propTypes = {
 }
 
 InstantPrint.defaultProps = {
-  fadeDuration: '1s',
+  fadeDuration: '60s',
   height: 300,
   width: 300
 }
