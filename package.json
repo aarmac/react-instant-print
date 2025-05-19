@@ -3,11 +3,6 @@
   "name": "@abmacdonald/react-instant-print",
   "version": "1.0.0",
   "license": "MIT",
-  "source": "src/index.js",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/abmacdonald/react-instant-print"
